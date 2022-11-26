@@ -30,7 +30,7 @@ python3 threatfox_search_ioc.py ntpjson.monster
 ## Submit an IOC
 This script is used to submit IOCs to ThreatFox by calling ThreatFox's [submission endpoint](https://threatfox.abuse.ch/api/#share). Before you submit IOCs to ThreaFox, make sure that you have read our [submission policy](https://threatfox.abuse.ch/api/#policy).
 
-## Note
+## API documentation
 
 The documentation for the ThreatFox API is available here:
 
