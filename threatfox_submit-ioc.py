@@ -5,9 +5,10 @@ import json
 
 # Prepare HTTPSConnectionPool
 headers = {
-  "API-KEY":        "YOUR-API-KEY-HERE",
+    "Auth-Key"      :   "YOUR-AUTH-KEY"
 }
-pool = urllib3.HTTPSConnectionPool('threatfox-api.abuse.ch', port=443, maxsize=50, headers=headers, cert_reqs='CERT_NONE', assert_hostname=True)
+
+pool = urllib3.HTTPSConnectionPool('threatfox-api.abuse.ch', port=443, maxsize=50, headers=headers)
 
 # threat_type      - Query https://threatfox.abuse.ch/api/#types to get the appropriate
 #                    threat_type / ioc_type combination
