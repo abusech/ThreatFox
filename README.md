@@ -2,7 +2,7 @@
 ThreatFox is an open threat intelligence sharing platform, allowin anyone to share indicators of compromise (IOCs). This repository provides some sample python3 scripts on how to interact with the ThreatFox API.
 
 ## Obtain an Auth-Key
-In order to query the MalwareBazaar API, you ned to obtain an ```Auth-Key```.  If you don't have an Auth-Key yet, you can get one at https://auth.abuse.ch/ for free.
+In order to query the ThreatFox API, you ned to obtain an ```Auth-Key```.  If you don't have an Auth-Key yet, you can get one at https://auth.abuse.ch/ for free.
 
 ## Query recent IOCs
 This script calls ThreatFox's [recent IOC endpoint](https://threatfox.abuse.ch/api/#recent-iocs) which returns the most recent IOCs added to ThreatFox. The example below queries the endpoint for IOCs added to the database whithin the past day:
