@@ -17,6 +17,7 @@ pool = urllib3.HTTPSConnectionPool('threatfox-api.abuse.ch', port=443, maxsize=5
 # malwareinfo      - Query https://threatfox.abuse.ch/api/#malware-list to get the appropriate
 #                  - malware family or search through Malpedia web UI: https://malpedia.caad.fkie.fraunhofer.de/
 # confidence_level - Optional; Must be between 0-100. Default: 50
+# is_compromised   - Optional: "True" or "False. Indicates whether the asset is compromised (i.e. compromised website, IP address, etc) or dedicated infrastructure setup and operated by the threat actor. Default: "False"
 # reference        - Optional; Must be a URL if provided
 # Comment          - Optional; Your comment on the IOC(s) you want to submit
 # anonymous        - Optional; 0 (false) or 1 (true). Default: 0 (false)
@@ -29,6 +30,7 @@ data = {
     'ioc_type':         ioc_type,
     'malware':          malware,
     'confidence_level': confidence_level,
+    'is_compromised':   is_compromised,
     'reference':        reference,
     'comment':          comment,
     'anonymous':        0,
